@@ -1,1 +1,3 @@
-breakfast  ::=
+Breakfast ::= MainItem "with" SideItem ( "on the side" )? ;
+MainItem ::= "poached eggs" | "scrambled eggs" | "bacon" ;
+SideItem ::= "toast" | "pancakes" | "English muffin" ;
