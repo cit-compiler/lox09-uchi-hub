@@ -1,4 +1,18 @@
 breakfast  ::= protein "with" breakfast "on the side"
-<Breakfast> ::= <MainItem> "with" <SideItem> ( "on the side" )? ;
-<MainItem> ::= "poached eggs" | "scrambled eggs" | "bacon" ;
-<SideItem> ::= "toast" | "pancakes" | "English muffin" ;
+breakfast  ::= protein
+breakfast  ::= bread
+
+protein    ::= crispiness "crispy" "bacon"
+protein    ::= "sausage"
+protein    ::= cooked "eggs"
+
+crispiness ::= "really"
+crispiness ::= "really" crispiness
+
+cooked     ::= "scrambled"
+cooked     ::= "poached"
+cooked     ::= "fried"
+
+bread      ::= "toast"
+bread      ::= "biscuits"
+bread      ::= "English muffin"
